@@ -1,0 +1,265 @@
+/* General Styling */
+* {
+    padding: 0;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+a {
+    text-decoration: none;
+}  
+ul {
+    list-style-type: none;
+}
+
+/* header styling */
+header {
+    background-image: url(../img/coffeehouse.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+}
+nav {
+    background-color: black;
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    z-index: 1;
+}
+nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+}
+
+nav ul li {
+    padding: 20px 50px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+nav ul li:hover, nav ul li:focus {
+    background-color: #b0b0b0; 
+}
+
+nav ul li a {
+    color: aliceblue;
+}
+
+nav ul li:hover a, nav ul li:focus a {
+    color: black;
+}
+
+header .overlay .home-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 200px;
+    color: #b0b0b0;
+}
+
+.home-title h1 {
+    font-size: 60px;
+    color: #b0b0b0;
+    font-weight: 300;
+     width: 5%;
+}
+
+.home-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-bar {
+    background-color: rgba(225, 225, 225, 0.2);
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 0 100px;
+    padding: 5px 10px;
+    border-radius: 70px;
+}
+.search-bar input {
+    border: 0;
+    padding: 5px 20px;
+    border-radius: 50px;
+    width: 400px;
+    outline: none;
+    background-color: transparent;
+    color: black;
+    font-size: 20px;
+}
+.search-bar button {
+    border: 0;
+    border-radius: 30px;
+    background-color: rgba(152, 145, 145, 0.821);
+}
+.search-bar input::placeholder {
+    color: white;
+}
+
+
+.home-title p {
+    background-color: black;
+    padding: 5px;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 5px;
+}
+.home-title p.left {
+    left: 10px;
+}
+.home-title p.right {
+    right: 10px;
+}
+/* main section */
+main {
+    background-color: #d7d7d7;
+}
+.container {
+    width: 900px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+/* About section */
+
+section {
+    padding: 30px 0;
+}
+.section-head {
+    background-color: black;
+    color: #cacaca;
+    margin: auto;
+    width: max-content;
+    padding: 5px 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.paraghraph {
+    margin: 40px 0 5px;
+    line-height: 1.5;
+    color: rgb(40, 40, 40);
+    width: 900px;
+}
+.quote-box {
+    width: max-content;
+    background-color: #ccccc6;
+    border-left: 10px solid #bebeba;
+    padding: 45px 85px 45px 20px;
+    line-height: 1.5;
+}
+.quote-box p {
+    margin-top: 10px;
+}
+img {
+    margin: 20px 0; 
+}
+
+/* Menu section */
+.box-content {
+    margin: 20px 0;
+    background-color: #e6e6e6;
+}
+.box-content:hover, .box-content:hover .box-buttons {
+    box-shadow: 0 0 15px 0 rgb(67, 67, 67);
+}
+.box-buttons {
+    text-align: center;
+}
+.box-content, .box-buttons {
+    transition: box-shadow 0.7s;
+}
+.box-buttons button{
+    margin: 5px;
+    border: 0;
+    padding: 5px 130px;
+    color: black;
+    font-weight: 700;
+    width : 350px;
+    transition: background-color 0.5s;
+}   
+.btn-effect:hover, .btn-effect:focus {
+    background-color: #626161;
+    color: white;
+    cursor: pointer;
+}
+.menu-list,.menu-list li  {
+    padding: 40px;
+}
+.menu-list li h5 {
+    margin: 20px 0;
+    color: #672710;
+}
+.menu-list li span {
+    color: #626161;
+}
+
+/* location section */
+.location-section .paraghraph {
+    margin: 10px 0;
+}
+.location-section .loc-p {
+    margin-top: 50px ;
+}
+.location-section p span {
+    background-color: black;
+    color: white;
+    padding: 3px 10px;
+}
+.location-section img {
+    width: 100%;
+}
+.wdth {
+    padding: 15px 5px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 0;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+form input:focus, form textarea:focus {
+    outline: 0;
+    opacity: 0.5;
+} 
+form button {
+    border: 0;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    font-weight: 700;
+    cursor: pointer;
+    transition: opacity 0.7s;
+}
+form button:hover, form button:focus {
+    opacity: 0.55;
+}
+/* footer section */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+footer h4 {
+    color: black;
+    font-weight: 700;
+    margin-right: 5px;
+}
+footer a {
+    color: #672710;
+}
+
